@@ -1,10 +1,10 @@
 import React from "react";
 import { useQuery } from "react-query";
-import { getPosts } from "../../apis/menu/menu";
+import { getMenus } from "../../apis/menu/menu";
 import Link from 'next/link'
 
 const Menu = () => {
-  const { data, isLoading } = useQuery("menus", getPosts);
+  const { data, isLoading } = useQuery("menus", getMenus);
   return (
     <div>
       <title>Jajanan Kedai Atok Menu</title>
