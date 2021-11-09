@@ -36,7 +36,7 @@ const Home: NextPage = () => {
   const { data, isLoading } = useQuery("banners", getBanners);
   return (
     <Layout header={header}>
-      <main className="mt-96 2xl:pt-96 xl:pt-44 lg:pt-44 md:pt-44 sm:pt-44 pt-44 mx-5 overflow-x-hidden flex flex-col items-center">
+      <main className="mt-96 2xl:pt-96 xl:pt-44 lg:pt-44 md:pt-44 sm:pt-40 pt-40 mx-5 overflow-x-hidden flex flex-col items-center">
         <div
           id="profile"
           className="flex flex-col items-center"
