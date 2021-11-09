@@ -2,9 +2,6 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useQuery } from "react-query";
-import styles from "../styles/Home.module.css";
-import { getMenus } from "../apis/menu/menu";
-import Link from "next/link";
 import Layout, { HeaderProps } from "../components/layout/layout";
 import {
   bahanSegar,
@@ -16,10 +13,7 @@ import {
 } from "../assets/index";
 import { getBanners } from "../apis/banner/banner";
 import "aos/dist/aos.css";
-import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Parallax, Pagination, Navigation } from "swiper";
-
-// import stylesSlide from "../styles/slider.module.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -36,7 +30,7 @@ const Home: NextPage = () => {
   const { data, isLoading } = useQuery("banners", getBanners);
   return (
     <Layout header={header}>
-      <main className="mt-96 xl:pt-44 lg:pt-40 md:pt-40 sm:pt-36 pt-36 mx-5 overflow-x-hidden flex flex-col items-center">
+      <main className="mt-96 3xl:pt-64 2xl:pt-10 xl:pt-10 lg:pt-40 md:pt-40 sm:pt-36 pt-36 mx-5 overflow-x-hidden flex flex-col items-center">
         <div
           id="profile"
           className="flex flex-col items-center"
@@ -50,7 +44,7 @@ const Home: NextPage = () => {
             Beberapa alasan mengapa kamu harus jajan di Jajanan Kedai atok...
           </h1>
         </div>
-        <section className="grid grid-cols-1 xl:grid-cols-4 xl:gap-10 gap-20 my-20 2xl:mx-52 xl:mx-24">
+        <section className="grid grid-cols-1 xl:grid-cols-4 xl:gap-10 gap-20 my-20 2xl:mx-36 xl:mx-24">
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
