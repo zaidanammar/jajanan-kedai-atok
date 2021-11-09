@@ -36,7 +36,7 @@ const Home: NextPage = () => {
   const { data, isLoading } = useQuery("banners", getBanners);
   return (
     <Layout header={header}>
-      <main className="mt-96  mx-5 overflow-x-hidden flex flex-col items-center">
+      <main className="mt-96 xl:pt-44 lg:pt-40 md:pt-40 sm:pt-36 pt-36 mx-5 overflow-x-hidden flex flex-col items-center">
         <div
           id="profile"
           className="flex flex-col items-center"
@@ -46,11 +46,11 @@ const Home: NextPage = () => {
           <h1 className="xl:text-3xl md:text-2xl sm:text-xl text-lg">
             Mengapa Jajanan Kedai Atok ?
           </h1>
-          <h1 className="text-center text-sm mt-2 font-normal">
+          <h1 className="text-center text-sm mt-4 font-normal">
             Beberapa alasan mengapa kamu harus jajan di Jajanan Kedai atok...
           </h1>
         </div>
-        <section className="grid grid-cols-1 xl:grid-cols-4 gap-16 my-20">
+        <section className="grid grid-cols-1 xl:grid-cols-4 xl:gap-10 gap-20 my-20 2xl:mx-52 xl:mx-24">
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
@@ -60,8 +60,8 @@ const Home: NextPage = () => {
               src={bahanSegar}
               alt="-"
               layout="intrinsic"
-              width="80"
-              height="80"
+              width="50"
+              height="50"
             />
             <div className="md:w-1/2 xl:w-full flex flex-col items-center">
               <h1 className="mt-8">Bahan Yang berkualitas</h1>
@@ -80,8 +80,8 @@ const Home: NextPage = () => {
               src={resepRahasia}
               alt="-"
               layout="intrinsic"
-              width="80"
-              height="80"
+              width="50"
+              height="50"
             />
 
             <div className="md:w-1/2 xl:w-full flex flex-col items-center">
@@ -101,8 +101,8 @@ const Home: NextPage = () => {
               src={banyakCabang}
               alt="-"
               layout="intrinsic"
-              width="80"
-              height="80"
+              width="50"
+              height="50"
             />
             <div className="md:w-1/2 xl:w-full flex flex-col items-center">
               <h1 className="mt-8">Siap Melayani Delivery</h1>
@@ -121,8 +121,8 @@ const Home: NextPage = () => {
               src={pilihanFavorit}
               alt="-"
               layout="intrinsic"
-              width="80"
-              height="80"
+              width="50"
+              height="50"
             />
 
             <div className="md:w-1/2 xl:w-full flex flex-col items-center">
@@ -136,7 +136,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
-      i
+      
     </Layout>
   );
 };
